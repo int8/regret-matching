@@ -33,4 +33,4 @@ class RPSPlayer(RegretMatchingDecisionMaker):
         return np.round(self.sum_p / self.games_played, 4)
 
     def eps(self):
-        return np.max(self.cumulative_regrets / self.games_played)
+        return np.max(self.regrets / self.games_played)
